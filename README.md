@@ -1,34 +1,44 @@
-# Transcrição e Tradução de Voz
+# Aplicação Web de Transcrição e Tradução de Voz
 
-Este projeto é uma aplicação web que permite a transcrição de voz em texto e a tradução de texto para diferentes idiomas. O backend é desenvolvido em Node.js com Express, enquanto o frontend utiliza HTML, CSS e JavaScript. A aplicação faz uso do reconhecimento de voz nativo do navegador e de uma API externa para tradução.
+Esta aplicação web oferece funcionalidades avançadas para transcrição de voz em texto e tradução de texto para vários idiomas. O backend é desenvolvido utilizando Node.js e Express, enquanto o frontend é construído com HTML, CSS e JavaScript. A aplicação integra o reconhecimento de voz nativo do navegador e uma API externa para tradução.
 
-# Funcionalidades
+## Funcionalidades
 
-Transcrição de Voz: O aplicativo pode gravar áudio e transcrever o conteúdo em texto em tempo real. Os usuários podem iniciar e parar a gravação, copiar o texto transcrito, limpar o histórico de transcrições e exportar o histórico.
-Tradução de Texto: Os usuários podem inserir texto, selecionar o idioma de destino e ver a tradução resultante.
-Contato: Um formulário de contato permite que os usuários enviem mensagens. As mensagens são processadas pelo backend e uma confirmação é enviada de volta.
+- **Transcrição de Voz**: 
+  - Grave áudio e transcreva o conteúdo em tempo real.
+  - Inicie e pare a gravação conforme necessário.
+  - Copie o texto transcrito para a área de transferência.
+  - Limpe o histórico de transcrições.
+  - Exporte o histórico de transcrições.
 
+- **Tradução de Texto**: 
+  - Insira texto e selecione o idioma de destino.
+  - Visualize a tradução resultante instantaneamente.
+
+- **Contato**: 
+  - Preencha um formulário para enviar mensagens.
+  - O backend processa as mensagens e envia uma confirmação de recebimento.
 
 ## Visão Geral
 
-Este projeto é uma aplicação web que permite aos usuários transcrever áudio em texto e traduzir texto para diferentes idiomas. O backend é responsável por lidar com requisições e fornecer a funcionalidade de tradução através de uma API externa. O frontend oferece uma interface interativa para o usuário.
+Este projeto proporciona uma plataforma intuitiva para transcrição e tradução de áudio e texto. O backend é responsável pelo processamento das requisições e pela integração com uma API de tradução externa. O frontend oferece uma interface interativa e amigável para os usuários interagirem com a aplicação.
 
 ## Tecnologias Utilizadas
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express
 - **APIs Externas**:
-  - Reconhecimento de voz: `webkitSpeechRecognition` (nativo do navegador)
-  - Tradução: MyMemory Translation API
+  - **Reconhecimento de Voz**: `webkitSpeechRecognition` (nativo do navegador)
+  - **Tradução**: MyMemory Translation API
 
 ## Requisitos
 
-Certifique-se de ter os seguintes requisitos instalados:
+Para executar a aplicação, você precisa ter os seguintes softwares instalados:
 
 - [Node.js](https://nodejs.org/) (versão 14 ou superior)
 - [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node.js)
 
-Para verificar se você já possui o Node.js e o npm instalados, execute:
+Para verificar se o Node.js e o npm estão instalados, execute os seguintes comandos no terminal:
 
 ```bash
 node -v
