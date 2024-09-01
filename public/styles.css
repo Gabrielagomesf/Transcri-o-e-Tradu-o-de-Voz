@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #b0e0e6;
+    color: #333;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 4px solid #add8e6;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    background: #add8e6;
+    border-radius: 8px;
+}
+
+nav ul li {
+    margin: 0 0.5em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #e0ffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b0e0e6;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.animated-section {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #4682b4;
+}
+
+textarea, input, select {
+    width: calc(100% - 2em);
+    margin: 0.5em 0;
+    padding: 0.75em;
+    border: 1px solid #b0c4de;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    padding: 0.75em 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #4169e1;
+    transform: scale(1.05);
+}
+
+#historyContainer {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #b0c4de;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#historyList li {
+    padding: 0.5em;
+    border-bottom: 1px solid #b0c4de;
+}
+
+#historyList li:last-child {
+    border-bottom: none;
+}
+
+#contactForm label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+}
+
+.status {
+    font-size: 1.2em;
+    color: #4682b4;
+    margin-top: 0.5em;
+}
+
+footer {
+    background-color: #b0e0e6;
+    color: #333;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

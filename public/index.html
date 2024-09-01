@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcrição e Tradução</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Transcrição e Tradução de Voz 🗣️</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#transcription">📝 Transcrição</a></li>
+                <li><a href="#translation">🌐 Tradução</a></li>
+                <li><a href="#contact">📩 Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="animated-section">
+            <h2>Bem-vindo! 👋</h2>
+            <p>Explore nossas funcionalidades: transcrição de voz em tempo real, tradução de textos e entre em contato conosco para dúvidas e feedback. Navegue pelas seções e descubra tudo o que podemos oferecer.</p>
+        </section>
+
+        <section id="transcription" class="animated-section">
+            <h2>Transcrição de Voz 📝</h2>
+            <div class="controls">
+                <button id="startButton">🎤 Iniciar Gravação</button>
+                <button id="stopButton" disabled>🛑 Parar Gravação</button>
+                <button id="copyTranscript">📋 Copiar Transcrição</button>
+                <button id="clearHistory">🗑️ Limpar Histórico</button>
+                <button id="exportHistory">📥 Exportar Histórico</button>
+            </div>
+            <textarea id="transcript" placeholder="A transcrição será exibida aqui..." aria-label="Área de transcrição" readonly></textarea>
+            <div id="historyContainer">
+                <h3>Histórico de Transcrições 📜</h3>
+                <ul id="historyList"></ul>
+            </div>
+            <p id="transcriptionStatus" class="status"></p>
+        </section>
+
+        <section id="translation" class="animated-section">
+            <h2>Tradução de Texto 🌐</h2>
+            <textarea id="translateInput" placeholder="Insira o texto para traduzir..." aria-label="Área de texto para tradução"></textarea>
+            <select id="languageSelect" aria-label="Selecionar idioma">
+                <option value="en">🇬🇧 Inglês</option>
+                <option value="es">🇪🇸 Espanhol</option>
+                <option value="fr">🇫🇷 Francês</option>
+                <!-- Adicione mais opções conforme necessário -->
+                 
+            </select>
+            <button id="translateText">🔄 Traduzir Texto</button>
+            <textarea id="translationOutput" placeholder="A tradução será exibida aqui..." aria-label="Área de tradução" readonly></textarea>
+            <p id="translationStatus" class="status"></p>
+        </section>
+
+        <section id="contact" class="animated-section">
+            <h2>Entre em Contato 📩</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                <button type="submit">📬 Enviar Mensagem</button>
+            </form>
+            <div id="formResponse"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Transcrição e Tradução. Todos os direitos reservados. 🌟</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
